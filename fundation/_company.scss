@@ -1,0 +1,97 @@
+#company{
+  // padding-bottom: 70px;
+  padding: 0px 20px 80px;
+  box-sizing: border-box;
+
+
+  .inner{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+
+  .g-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+
+    @include SmallTab{
+      font-size: 2.75rem;
+    }
+
+    img{
+      max-width: 250px;
+      width: 16vw;
+      padding:0px 20px;
+
+      @include SmartTab{
+        width: 15vw;
+        padding:0px 30px;
+      }
+    }
+  }//title
+
+  .bg-cover{
+
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include OverTab{
+      background-size:auto;
+    }
+
+
+    .review{
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 35px 40px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border: 7px solid #000;
+      border-radius: 70px;
+      box-shadow:8px 8px 0px -3px #000;
+
+
+      p{
+        font-size: 1rem;
+        line-height: 1.5em;
+        & + p{
+          padding-top: 15px;
+        }
+       
+        span{
+          font-size: 1rem;
+          text-align: right;
+          display: inline-block;
+        }
+
+        @include MidTab{
+          font-size: 1.25rem;
+        }
+
+        @include OverTab{
+          font-size: 1.4rem;
+
+        }
+
+      }
+      
+
+  
+    }
+  
+
+
+  }
+
+ 
+
+  
+  }//inner
+}

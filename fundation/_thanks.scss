@@ -1,0 +1,88 @@
+#thanks{
+  text-align: center;
+  height: 94vh;
+  background:url("./img/bg/bg.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center;
+
+  padding: 120px 20px 0px;
+  box-sizing: border-box;
+
+  .t-inner{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding:50px 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border:8px solid $red;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+
+  }
+  h2{
+    font-size: 2rem;
+
+    @include SmallTab{
+      font-size: 3rem;
+    }
+  }
+  p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+
+    @include SmallTab{
+      font-size: 1.75rem;
+      line-height: 2em;
+    }
+  }
+
+  .return-btn{
+
+    font-size: 1.5rem;
+    line-height: 60px;
+    background-color: $red;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 30px;
+
+    
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }//btn
+
+ 
+  .bg-icon01{
+    position: absolute;
+    z-index: 10;
+    top:-50px;
+    right:0px;
+    width: 15vw;
+
+    @include KeyTab{
+      width: 160px;
+      top:-60px;
+      right:-30px;
+    }
+  }
+
+  .bg-icon02{
+    position: absolute;
+      z-index: 10;
+      bottom:-40px;
+      left:0px;
+      width: 16vw;
+
+      @include KeyTab{
+        width: 150px;
+        bottom:-40px;
+        left:-30px;
+      }
+  }
+}

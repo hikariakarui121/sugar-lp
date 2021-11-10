@@ -1,0 +1,175 @@
+#feature{
+  width: 100%;
+  padding-bottom: 70px;
+
+  .inner{
+    position: relative;
+    max-width: 1140px;
+    width: 100%;
+    margin:0 auto;
+    background: url(./img/bg/bg02.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+    @include SmallTab{
+      padding-bottom: 120px;
+    }
+
+    @include KeyTab{
+      background-size: contain;
+    }
+
+    .bg-icon01{
+      position: absolute;
+      z-index: 10;
+      top:-30px;
+      left:0px;
+      width: 15vw;
+
+      @include KeyTab{
+        width: 150px;
+        top:-30px;
+        left:-30px;
+      }
+    }
+
+    .bg-icon02{
+      position: absolute;
+      z-index: 10;
+      bottom:-40px;
+      left:0px;
+      width: 16vw;
+
+      @include KeyTab{
+        width: 150px;
+        bottom:-40px;
+        left:-30px;
+      }
+    }
+  }
+
+  .f-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @include SmallTab{
+      font-size: 2.75rem;
+    }
+
+    img{
+      max-width: 250px;
+      width: 16vw;
+      padding:0px 20px;
+
+      @include SmartTab{
+        width: 20vw;
+        padding:0px 30px;
+      }
+    }//img
+  }
+
+  .f-contents{
+    overflow-x: hidden;
+    padding: 40px 20px  0px;
+    box-sizing: border-box;
+    max-width: 850px;
+    width: 100%;
+    margin:auto;
+
+    @include SmallTab{
+      padding: 70px 30px  0px;
+    }
+
+    .f-item{
+
+
+      .f-item-top{
+
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        @include SmallTab{
+          flex-direction: row;
+        }
+
+        &.second{
+          padding-top: 50px;
+
+
+          @include SmallTab{
+            padding-top: 70px;
+           flex-direction: row-reverse;
+          }
+        }
+
+        img{
+          width:80%;
+          margin: 0 auto;
+         
+
+          @include SmallTab{
+            margin:0;
+            width: 50%;
+
+          }
+        }
+        .f-item-text{
+          width: 80%;
+          margin: 0 auto;
+          word-break: break-all;
+
+          @include SmallTab{
+            width: 45%;
+            margin: 0;
+
+          }
+
+          .f-item-title{
+            padding-top: 20px;
+            font-size: 1.5rem;
+            line-height: 1.5em;
+            font-weight: bold;
+            text-align: center;
+    
+
+            @include MidTab{
+              font-size: 30px;
+              text-align: left
+            }
+          }
+
+          .f-item-discription{
+            padding-top: 30px;
+            font-size: 1.5rem;
+            line-height: 1.2em;
+            text-align: center;
+
+            @include MidTab{
+              text-align: right;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+
+
+      .f-item-bottom{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: minmax(min-content,420px)minmax(min-content,420px)minmax(min-content,420px);
+        justify-content: center;
+        gap:20px;
+
+      }
+    }
+  }//inner
+}//section

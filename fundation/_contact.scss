@@ -1,0 +1,168 @@
+#contact{
+  padding-bottom: 80px;
+  position: relative;
+
+  .c-inner{
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background: url(./img/bg/bg05.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include OverTab{
+      background-size: contain;
+    }
+
+    .bg-icon05{
+      position: absolute;
+      z-index: 10;
+      width: 15vw;
+      top:-30px;
+      right:0px;
+
+      @include KeyTab{
+        width: 180px;
+        top:-30px;
+        right:30px;
+      }
+    }
+    
+
+
+    .c-title{
+      position: relative;
+      z-index: 2;
+
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-top: 50px;
+      padding-bottom:35px;
+
+      @include SmallTab{
+        padding-top: 70px;
+        font-size: 2.75rem;
+      }
+
+      img{
+        max-width: 250px;
+        width: 16vw;
+        padding:0px 20px;
+  
+        @include SmartTab{
+          width: 15vw;
+          padding:0px 30px;
+        }
+      }//img
+
+    }
+
+    form{
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1rem;
+      padding-bottom: 50px;
+        
+      @include SmallTab{
+        font-size: 1.25rem;
+      }
+
+      input{
+        width: 100%;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        line-height: 40px;
+        
+        @include SmallTab{
+          font-size: 1.25rem;
+          line-height: 50px;
+        }
+
+      }
+      textarea{
+        font-size: 1.25rem;
+        padding-left: 20px;
+        padding-top: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 200px;
+
+      }
+
+      label{
+        display: inline-block;
+        padding-bottom: 10px;
+        font-weight: bold;
+        
+        span{
+          margin-left: 10px;
+          background-color: #000;
+          color: white;
+          padding: 3px 7px;
+          font-size: 0.7rem;
+          
+          @include SmallTab{
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .submit{
+        text-align: center;
+        max-width:400px;
+        height: 60px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: none;
+        color: white;
+        background-color: #e23c3c;
+
+
+    &:hover{
+      opacity: 0.75;
+      cursor: pointer;
+    }
+      
+
+      }
+
+      p{
+        padding-bottom:20px;
+        font-weight: bold;
+        text-align: left;
+     
+        &:first-child{
+          line-height: 1.5em;
+        }
+      }
+    }//form
+
+    .bg05{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1000px;
+      height: 1100px;
+   
+    }
+  }
+}

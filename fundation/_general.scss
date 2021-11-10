@@ -1,0 +1,85 @@
+$red:#e23c3c;
+
+//font-------------------------------------------
+
+.font-mochiy{
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+//レスポンシブ------------------------------------
+
+body{
+  font-size: 16px;
+  font-family: 'Secular One', sans-serif;
+}
+
+main{
+  background:url("./img/bg/bg.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center;
+
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  cursor: pointer;
+  // display: block;
+
+  &:hover{
+    opacity: 0.75;
+  }
+}
+
+
+//レスポンシブ------------------------------------
+
+@mixin SmartTab {
+  @media screen and(min-width:480px){
+    @content; 
+  }
+}
+@mixin SmallTab {
+  @media screen and(min-width:600px){
+    @content; 
+  }
+}
+@mixin MidTab {
+  @media screen and(min-width:800px){
+    @content; 
+  }
+}
+@mixin OverTab {
+  @media screen and(min-width:1000px){
+    @content; 
+  }
+}
+@mixin KeyTab {
+  @media screen and(min-width:1200px){
+    @content; 
+  }
+}
+//レスポンシブ------------------------------------
+.pc{
+  display: none;
+  @include SmallTab{
+    display: block;
+  }
+}
+
+.sp{
+  display: block;
+  @include SmallTab{
+    display: none;
+  }
+}
+
+.mid{
+  display: block;
+  @include MidTab{
+    display: none;
+  }
+}

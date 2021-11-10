@@ -1,0 +1,165 @@
+#gallary{
+  width: 100%;
+  padding-bottom: 50px;
+
+  .inner{
+    max-width: 1140px;
+    width: 100%;
+    margin:0 auto;
+    padding-bottom: 60px;
+    position: relative;
+    background: url(./img/bg/bg03.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+    @include SmallTab{
+   
+      padding-bottom: 30px;
+    }
+
+    @include KeyTab{
+      background-position: center;
+      background-size: contain;
+    }
+
+
+    .bg-icon03{
+      position: absolute;
+      z-index: 10;
+      top:-20px;
+      right:0px;
+      width: 25vw;
+
+      @include KeyTab{
+        width: 300px;
+        top:-50px;
+        right:-50px;
+      }
+    }
+
+    .bg-icon04{
+      position: absolute;
+      z-index: 10;
+      bottom:-10px;
+      left:0px;
+      width: 25vw;
+
+      @include KeyTab{
+        width: 250px;
+        bottom:-35px;
+        left:0px;
+      }
+    }
+
+    .g-contents{
+      max-width: 850px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 20px 40px;
+      box-sizing: border-box;
+
+      @include SmallTab{
+        padding-top: 70px;
+      }
+
+    }
+
+  }//inner
+  .g-title{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+    @include SmallTab{
+      font-size: 2.5rem;
+    }
+
+    img{
+     
+      width: 16vw;
+      padding:0px 20px;
+
+      @include SmartTab{
+        max-width: 200px;
+        width: 18vw;
+        padding:0px 30px;
+      }
+    }
+  }//g-title
+
+  .sub-title{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+
+    @include SmallTab{
+      font-size: 20px;
+    }
+
+    a{
+      color: $red;
+    }
+    
+  }
+
+  .g-item-content{
+    
+    position: relative;
+    z-index: 2;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: minmax(min-content,150px)minmax(min-content,150px) minmax(min-content,150px);
+    box-sizing: border-box;
+    padding-bottom: 40px;
+
+
+    @include SmallTab{
+      gap: 20px;
+      grid-template-columns: minmax(min-content,180px)minmax(min-content,180px)minmax(min-content,180px)minmax(min-content,180px);
+    }
+
+    a{
+      img{
+        width: 100%;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+      }
+    }
+  }//content
+
+  .detail-btn{
+    position: relative;
+    z-index: 2;
+    width:325px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    background: rgb(226, 60, 60);
+    border-radius: 30px;
+
+    a{
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.25rem;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    &:hover{
+      opacity: 0.75;
+    }
+  }//btn
+
+
+}///section
